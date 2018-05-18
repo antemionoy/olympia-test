@@ -1,0 +1,323 @@
+@import "partials/vars";
+@media only screen and (max-width: 1400px) {
+    .header {
+        &__right {
+            flex: 1;
+            max-width: 100%;
+        }
+        &__left {
+            flex: 2;
+            max-width: 100%;
+        }
+    }
+    .info {
+        &__grid {
+            flex-wrap: wrap;
+        }
+        &__col {
+            flex: 1 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 100%;
+    }
+    .news {
+        &__item {
+            flex: 1 100%;
+            max-width: 100%;
+        }
+    }
+    .tasks {
+        &__item {
+            border: none;
+        }
+    }
+    .workers {
+        &__item {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .header {
+        &__menu {
+            padding-left: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .button {
+        font-size: 12px;
+    }
+    .btn-more {
+        font-size: 12px;
+    }
+    .main {
+        margin: 20px 0px 0px;
+    }
+    .header {
+        position: relative;
+        &__grid {
+            flex-direction: row-reverse;
+        }
+        &__left {
+            flex: auto;
+        }
+        &__right {
+            flex: 6 1 auto;
+            max-width: 100%;
+        }
+        .profile {
+            flex: 7;
+        }
+        &__menu {
+            position: absolute;
+            flex-direction: column;
+            top: 77px;
+            background-color: #fff;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 20px 40px 0px;
+            display: flex;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 0.2s ease-out;
+            height: auto;
+        }
+        &__menu.show-menu {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        &__menu-wrap {
+            position: static;
+            justify-content: center;
+        }
+        &__link {
+            color: #222;
+            font-size: 20px;
+            padding: 12px 0px 22px;
+            margin: 8px 0px 0px;
+            border-bottom: 1px solid #eee;
+            width: 100%;
+            text-align: center;
+            &:hover,
+            &:focus {
+                color: $main-color;
+                font-weight: 500;
+            }
+        }
+        &__form {
+            z-index: 95;
+        }
+        &__messages {
+            border-right: 2px solid #0e233c;
+            flex: 1 1 auto;
+        }
+        &__search {
+            border-right: none;
+        }
+    }
+    .main {
+        &__col {
+            &--big {
+                flex: 1 1 66.66%;
+                max-width: 66.66%;
+            }
+            &--small {
+                flex: 1;
+                max-width: 33.33%;
+            }
+        }
+    }
+    .news {
+        padding: 35px 30px 30px;
+    }
+    .info {
+        &__col {
+            padding: 45px 30px 30px;
+        }
+    }
+    .tabs {
+        &__item {
+            padding: 35px 30px 30px;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+    .widgets__title {
+        font-size: 80px;
+    }
+    .tabs-slider__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tabs {
+        &__nav {
+            max-width: 100%;
+        }
+        &__link {
+            flex-basis: 25%;
+            margin: 0px;
+            font-size: 14px;
+        }
+    }
+    .main-title {
+        font-size: 20px;
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .tabs-slider .owl-nav,
+    .info-slider .owl-nav {
+        top: auto;
+        bottom: 0;
+    }
+    .tabs-slider__item,
+    .frames-slider__slide,
+    .birthdays-slider__slide {
+        padding: 0px 0px 60px;
+    }
+    .header {
+        &__grid {
+            height: 60px;
+        }
+        &__input {
+            width: 75%;
+        }
+        &__right,
+        &__left {
+            flex: 1;
+        }
+        .profile {
+            position: static;
+            padding: 0px 15px;
+            justify-content: center;
+            flex: 1;
+        }
+        &__menu {
+            top: 60px;
+            padding: 10px 30px 0px;
+        }
+        &__link {
+            font-size: 12px;
+            padding: 12px 0px 12px;
+        }
+        .profile__name {
+            display: none;
+        }
+        .profile__avatar {
+            width: 30px;
+            height: 30px;
+            margin: 0;
+        }
+        &__messages {
+            flex: 1;
+            padding: 0px 15px;
+        }
+        &__menu-wrap {
+            flex: 1;
+            padding: 0px 15px;
+        }
+        &__search {
+            flex: 1;
+            padding: 0px 15px;
+        }
+        .profile__dropdown {
+            padding: 15px 10px 0px;
+        }
+        .message__dropdown {
+            padding: 15px 30px 0px;
+        }
+    }
+    .hamburger {
+        .line {
+            width: 30px;
+        }
+    }
+    .dropdown {
+        top: 60px;
+        &__link {
+            font-size: 12px;
+        }
+    }
+    .main-slider {
+        &__item {
+            height: 400px;
+        }
+        &__content {
+            width: 100%;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .owl-dots,
+        .owl-nav {
+            width: 100%;
+        }
+    }
+    .task .task__item {
+        border-right: 1px solid #1c6fae;
+    }
+    .main {
+        &__grid {
+            flex-wrap: wrap;
+        }
+        &__col {
+            padding: 0px;
+            margin: 0px 0px 40px;
+            &--big {
+                flex: 1 1 auto;
+                max-width: 100%;
+            }
+            &--small {
+                flex: 1;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .news {
+        &__item {
+            flex-direction: column;
+        }
+        &__col--picture {
+            margin-bottom: 10px;
+        }
+    }
+    .birthdays-slider__item {
+        flex-direction: column;
+    }
+    .birthdays-slider__info {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .birthdays__button {
+        margin-top: 10px;
+    }
+    .main-slider {
+        .owl-nav {
+            display: none;
+        }
+        .main-slider__text {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 0;
+        }
+        &__content {
+            min-height: auto;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.0001 39.9999">
+  <title>left</title>
+  <style>
+    #arrow_inset:hover{
+      background-color: #1f273c;
+      fill: red;
+    }
+  </style>
+  <g id="Forma_1_копия_8" data-name="Forma 1 копия 8" style="isolation: isolate">
+    <g>
+      <g id="arrow_circle" data-name="Эллипс 5 копия 3">
+        <path d="M20,2A18,18,0,1,1,2,20,18.02,18.02,0,0,1,20,2m0-2A20,20,0,1,0,40,20,20,20,0,0,0,20,0h0Z" style="fill: #ffff"/>
+      </g>
+      <g id="arrow_inset" data-name="Forma 1 копия 8">
+        <polygon points="23.286 15.516 21.719 14 15 20.5 21.719 27 23.286 25.483 18.135 20.5 23.286 15.516" style="fill: #ffff;fill-rule: evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
